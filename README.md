@@ -9,9 +9,14 @@ https://www.saucedemo.com/
 - David Muli
 - Oskari Laukkanen
 
-# Technology / Automation Tools
+# Tools used
+- Visual Studio Code (VS Code)
+- Github
+- Git Bash
+- Python
 - Playwright
 - Robot framework
+- Selenium Library
 
 # Test Cases
 
