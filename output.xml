@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.10 on win32)" generated="2026-11-26T05:37:43.895932" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\mully\Documents\Swaglabs_Functional_Testing\robot-project\tests">
+<suite id="s1-s1" name="TC 10 Remove Product From Cart" source="C:\Users\mully\Documents\Swaglabs_Functional_Testing\robot-project\tests\TC_10 Remove Product From Cart.robot">
+<test id="s1-s1-t1" name="TC_10 Remove Product From Cart" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:44.141551" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-11-26T05:37:44.142064" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROMEDRIVER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-26T05:37:44.141099" elapsed="2.140355"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:46.282142" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.281800" elapsed="0.075044"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:46.358251" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.357484" elapsed="0.044929"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:46.402951" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.402746" elapsed="0.041909"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:46.445114" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.444906" elapsed="0.062177"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:46.507990" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
+<arg>class:shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.507708" elapsed="0.031667"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:46.539903" level="INFO">Clicking button 'id:remove-sauce-labs-backpack'.</msg>
+<arg>id:remove-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.539675" elapsed="0.049868"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:46.599715" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
+<arg>Sauce Labs Backpack</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.589804" elapsed="0.009967"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-26T05:37:46.600020" elapsed="2.154925"/>
+</kw>
+<doc>Verify that a user can remove a previously added product from the cart.</doc>
+<status status="PASS" start="2026-11-26T05:37:44.139809" elapsed="4.616529"/>
+</test>
+<status status="PASS" start="2026-11-26T05:37:43.925434" elapsed="4.832739"/>
+</suite>
+<suite id="s1-s2" name="TC 16 Verify Checkout Button Works" source="C:\Users\mully\Documents\Swaglabs_Functional_Testing\robot-project\tests\TC_16 Verify Checkout Button Works.robot">
+<test id="s1-s2-t1" name="TC_16 Verify Checkout Button Works" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:48.764850" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-11-26T05:37:48.765046" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${CHROMEDRIVER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-26T05:37:48.764417" elapsed="2.287946"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:51.053008" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.052734" elapsed="0.084309"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:51.137611" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.137384" elapsed="0.045597"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:51.183636" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.183407" elapsed="0.049388"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:51.233540" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.233222" elapsed="0.082011"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:51.315843" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
+<arg>class:shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.315602" elapsed="0.038050"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:51.354362" level="INFO">Clicking button 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.354079" elapsed="0.050363"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:51.405128" level="INFO">Verifying element 'class:title' contains exact text 'Checkout: Your Information'.</msg>
+<arg>class:title</arg>
+<arg>Checkout: Your Information</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.404836" elapsed="0.013247"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-26T05:37:51.418468" elapsed="2.159846"/>
+</kw>
+<doc>Verify that the Checkout button redirects the user to the Checkout: Your Information page.</doc>
+<status status="PASS" start="2026-11-26T05:37:48.763309" elapsed="4.820058"/>
+</test>
+<status status="PASS" start="2026-11-26T05:37:48.759574" elapsed="4.829713"/>
+</suite>
+<suite id="s1-s3" name="TC 18 Required First Name Validation" source="C:\Users\mully\Documents\Swaglabs_Functional_Testing\robot-project\tests\TC_18 Required First Name Validation.robot">
+<test id="s1-s3-t1" name="TC_18 Required First Name Validation" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:53.594761" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-11-26T05:37:53.595445" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${CHROMEDRIVER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-26T05:37:53.594507" elapsed="2.219523"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:55.814700" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:55.814419" elapsed="0.066352"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:55.881399" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:55.881140" elapsed="0.052379"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:55.934043" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:55.933848" elapsed="0.041565"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-26T05:37:55.975947" elapsed="0.038197"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:56.014760" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.014529" elapsed="0.047030"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:56.062144" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
+<arg>class:shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.061913" elapsed="0.035420"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:checkout</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.097692" elapsed="0.008782"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:56.107067" level="INFO">Clicking button 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.106772" elapsed="0.038408"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:last-name</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.145710" elapsed="0.008115"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:56.154286" level="INFO">Typing text 'MULI' into text field 'id:last-name'.</msg>
+<arg>id:last-name</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.154066" elapsed="0.041781"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:56.196410" level="INFO">Typing text '37600' into text field 'id:postal-code'.</msg>
+<arg>id:postal-code</arg>
+<arg>${ZIPCODE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.196173" elapsed="0.037102"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:56.233880" level="INFO">Clicking button 'id:continue'.</msg>
+<arg>id:continue</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.233676" elapsed="0.036690"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:56.282524" level="INFO">Element 'css:h3[data-test='error']' contains text 'Error: First Name is required'.</msg>
+<arg>css:h3[data-test='error']</arg>
+<arg>Error: First Name is required</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.270654" elapsed="0.011951"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-26T05:37:56.282895" elapsed="2.118209"/>
+</kw>
+<doc>Verify that First Name is a mandatory field during checkout.</doc>
+<status status="PASS" start="2026-11-26T05:37:53.593808" elapsed="4.808828"/>
+</test>
+<status status="PASS" start="2026-11-26T05:37:53.590129" elapsed="4.813797"/>
+</suite>
+<suite id="s1-s4" name="TC 21 Verify Checkout Overview Information" source="C:\Users\mully\Documents\Swaglabs_Functional_Testing\robot-project\tests\TC_21 Verify Checkout Overview Information.robot">
+<test id="s1-s4-t1" name="TC_21 Verify Checkout Overview Information" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:37:58.410950" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-11-26T05:37:58.411189" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${CHROMEDRIVER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-26T05:37:58.410480" elapsed="2.266962"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:00.678282" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:00.677912" elapsed="0.084728"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:00.763589" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:00.763169" elapsed="0.048234"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:00.812067" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:00.811862" elapsed="0.047401"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-26T05:38:00.859746" elapsed="0.038972"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:00.899656" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:00.899236" elapsed="0.048821"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:00.949013" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
+<arg>class:shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:00.948583" elapsed="0.032907"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:checkout</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-26T05:38:00.981923" elapsed="0.214663"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:01.197078" level="INFO">Clicking button 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.196881" elapsed="0.035669"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:first-name</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.232943" elapsed="0.008733"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:01.242265" level="INFO">Typing text 'DAVID' into text field 'id:first-name'.</msg>
+<arg>id:first-name</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.242006" elapsed="0.042117"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:01.284668" level="INFO">Typing text 'MULI' into text field 'id:last-name'.</msg>
+<arg>id:last-name</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.284426" elapsed="0.038213"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:01.323162" level="INFO">Typing text '37600' into text field 'id:postal-code'.</msg>
+<arg>id:postal-code</arg>
+<arg>${ZIPCODE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.322931" elapsed="0.041146"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:01.364562" level="INFO">Clicking button 'id:continue'.</msg>
+<arg>id:continue</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.364360" elapsed="0.037509"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:01.402458" level="INFO">Verifying element 'class:title' contains exact text 'Checkout: Overview'.</msg>
+<arg>class:title</arg>
+<arg>Checkout: Overview</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.402216" elapsed="0.013212"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-11-26T05:38:01.422040" level="INFO">Current page contains text 'Sauce Labs Backpack'.</msg>
+<arg>${PRODUCT}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.415837" elapsed="0.006270"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-26T05:38:01.422317" elapsed="2.158323"/>
+</kw>
+<doc>Verify that all selected products are displayed correctly on the Checkout Overview page.</doc>
+<status status="PASS" start="2026-11-26T05:37:58.409249" elapsed="5.172938"/>
+</test>
+<status status="PASS" start="2026-11-26T05:37:58.405004" elapsed="5.178368"/>
+</suite>
+<status status="PASS" start="2026-11-26T05:37:43.897467" elapsed="19.687976"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="4" fail="0" skip="0">Tests</stat>
+<stat name="TC 10 Remove Product From Cart" id="s1-s1" pass="1" fail="0" skip="0">Tests.TC 10 Remove Product From Cart</stat>
+<stat name="TC 16 Verify Checkout Button Works" id="s1-s2" pass="1" fail="0" skip="0">Tests.TC 16 Verify Checkout Button Works</stat>
+<stat name="TC 18 Required First Name Validation" id="s1-s3" pass="1" fail="0" skip="0">Tests.TC 18 Required First Name Validation</stat>
+<stat name="TC 21 Verify Checkout Overview Information" id="s1-s4" pass="1" fail="0" skip="0">Tests.TC 21 Verify Checkout Overview Information</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-11-26T05:37:44.141551" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-11-26T05:37:48.764850" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-11-26T05:37:53.594761" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-11-26T05:37:58.410950" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+</errors>
+</robot>
